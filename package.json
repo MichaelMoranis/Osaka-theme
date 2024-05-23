@@ -1,0 +1,26 @@
+{
+  "name": "neoosaka-theme",
+  "displayName": "NeoOsaka Theme",
+  "description": "neoozaka theme create by Michael Moranis inpiration by solarized osaka vnim  by takuya Matsuyama",
+  "version": "0.0.1",
+  "publisher": "moranisdev",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MichaelMoranis/neosolarized-theme-moranisdev.git"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "NeoOsaka Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/NeoOsaka Theme-color-theme.json"
+      }
+    ]
+  }
+}
