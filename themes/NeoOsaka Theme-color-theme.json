@@ -15,13 +15,14 @@
 	}
 },
 "tokenColors": [
-	{
-		"name": "unison punctuation",
-		"scope": "punctuation.definition.delayed.unison,punctuation.definition.list.begin.unison,punctuation.definition.list.end.unison,punctuation.definition.ability.begin.unison,punctuation.definition.ability.end.unison,punctuation.operator.assignment.as.unison,punctuation.separator.pipe.unison,punctuation.separator.delimiter.unison,punctuation.definition.hash.unison",
-		"settings": {
-			"foreground": "#268bd2"
-		}
-	},
+	// {
+	// 	"name": "unison punctuation",
+	// 	"scope": "punctuation.definition.delayed.unison,punctuation.definition.list.begin.unison,punctuation.definition.list.end.unison,punctuation.definition.ability.begin.unison,punctuation.definition.ability.end.unison,punctuation.operator.assignment.as.unison,punctuation.separator.pipe.unison,punctuation.separator.delimiter.unison,punctuation.definition.hash.unison",
+	// 	"settings": {
+	// 		"foreground": "#268bd2"
+	// 	}
+	// },
+	
 	{
 		"name": "haskell variable generic-type",
 		"scope": "variable.other.generic-type.haskell",
@@ -46,6 +47,7 @@
 	{
 		"name": "punctuation.separator.parameters.python",
 		"scope": "punctuation.separator.period.python,punctuation.separator.element.python,punctuation.parenthesis.begin.python,punctuation.parenthesis.end.python",
+		
 		"settings": {
 			"foreground": "#f25050"
 		}
@@ -71,6 +73,19 @@
 			"foreground": "#245abd"
 		}
 	},
+	{
+		"name": "Tag name",
+		"scope": [
+			"entity.name.tag",          // Tags HTML e XML
+			"meta.tag entity.name.tag", // Mais escopos relacionados a tags
+			"entity.name.tag.css",      // Tags em arquivos CSS
+			"entity.name.tag.twig"      // Tags em arquivos Twig
+		],
+		"settings": {
+			"foreground": "#859900"
+		}
+	},
+	
 	{
 		"name": "entity.name.lifetime.rust",
 		"scope": "entity.name.lifetime.rust",
@@ -174,6 +189,26 @@
 		"scope": "punctuation.separator.key-value",
 		"settings": {
 			"foreground": "#f25050"
+		}
+	},
+	{
+		"scope": [
+			"keyword.control.import.js",   // Import em JavaScript
+			"keyword.control.import.ts",   // Import em TypeScript
+			"keyword.control.import.python", // Import em Python
+			"keyword.control.import.java", // Import em Java
+			"keyword.control.module.js",   // From em JavaScript
+			"keyword.control.module.ts",   // From em TypeScript
+			"keyword.control.module.python", // From em Python
+			"punctuation.definition.block",   // Chaves {}
+			"punctuation.definition.array",   // Colchetes []
+			"punctuation.separator",          // Vírgulas , e ponto e vírgula ;
+			"punctuation.terminator",
+			"support.class.component",  // Import em TypeScript
+			
+		],
+		"settings": {
+			"foreground": "#f32516" // Roxo para import e from
 		}
 	},
 	{
@@ -1914,7 +1949,7 @@
 	"input.placeholderForeground": "#a6a6a6",
 	"textLink.foreground": "#3794ff",
 	"editor.background": "#01151b",
-	"editor.foreground": "#f25050",
+	"editor.foreground": "#e7dede",
 	"editorLineNumber.foreground": "#b6a54dc1",
 	"editorCursor.foreground": "#aeafad",
 	"editorCursor.background": "#000000",
