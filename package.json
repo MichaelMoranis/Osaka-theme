@@ -2,7 +2,7 @@
   "name": "neoosaka-theme",
   "displayName": "NeoOsaka Theme",
   "description": "neoozaka theme create by Michael Moranis inpiration by solarized osaka vnim  by takuya Matsuyama",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "publisher": "moranisdev",
   "engines": {
     "vscode": "^1.89.0"
